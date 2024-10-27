@@ -1,0 +1,84 @@
+﻿@using Assignement.Model.Entity
+@using Assignement.Model.DTO
+
+@model List<Department>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Style {
+    <style>
+        .page-title {
+            color: #333;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+        }
+
+        .btn-primary, .btn-success, .btn-danger {
+            border-radius: 20px;
+        }
+
+        .department-item {
+            margin-bottom: 20px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            text-align: left;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+
+        .number-list p {
+            color: #007bff;
+            font-weight: 500;
+        }
+    </style>
+}
+
+<div class="container my-5 text-center">
+    <h1 class="page-title mb-4">Welcome to the HR Management System</h1>
+
+    <div class="mb-5">
+        <a asp-action="DepartmentSave" asp-controller="Home" class="btn btn-primary btn-lg px-4 py-2">+ Create New Department</a>
+    </div>
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-6 department-item">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Department: @item.Name</h5>
+                        <p class="card-text mb-1"><strong>Created At:</strong> @item.CreatedAt.ToShortDateString()</p>
+
+
+                        <div class="actions">
+                            <a asp-action="DepartmentSave" asp-controller="Home" asp-route-Id="@item.Id" class="btn btn-success">Edit Department</a>
+                            <a asp-action="DepartmentDelete" asp-controller="Home" asp-route-Id="@item.Id" class="btn btn-danger">Delete Department</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

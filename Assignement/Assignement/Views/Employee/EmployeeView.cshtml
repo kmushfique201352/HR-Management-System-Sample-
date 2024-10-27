@@ -1,0 +1,71 @@
+﻿@model IEnumerable<dynamic>
+
+@{
+    ViewData["Title"] = "Employee Edit Page";
+}
+<h1 class="text-center mb-5 display-4">@ViewData["Title"]</h1>
+
+@section Style {
+    <style>
+        .employee-item {
+            margin-bottom: 30px;
+        }
+
+        .privacy-text {
+            background: #f0f8ff;
+            color: #2c3e50;
+            text-align: center;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+            .privacy-text:hover {
+                background: #1abc9c;
+                color: #fff;
+            }
+
+        .card-title, .card-text {
+            font-size: 1.1rem;
+        }
+
+        .card-footer a {
+            width: 45%;
+        }
+    </style>
+}
+
+<div class="text-center my-4">
+    <a asp-action="EmployeeSave" asp-controller="Employee" class="btn btn-lg btn-success shadow-sm">
+        <i class="bi bi-person-plus-fill"></i> Add New Employee
+    </a>
+</div>
+
+<div class="row justify-content-center">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-6 col-lg-4 employee-item">
+            <div class="card h-100 shadow border-0 rounded-lg">
+                <div class="card-body text-center">
+                    <h4 class="card-title text-primary mb-3"><i class="bi bi-person-circle"></i> @item.Name</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <i class="bi bi-building"></i> Department: @item.DepartmentName
+                    </h6>
+                    <h6 class="card-subtitle mb-2 text-muted">
+                        <i class="bi bi-briefcase-fill"></i> Designation: @item.DesignationName
+                    </h6>
+                    <p class="card-text mt-3"><i class="bi bi-geo-alt-fill"></i> Address: @item.Address</p>
+                    <p class="card-text"><i class="bi bi-geo-alt"></i> City: @item.City</p>
+                    <p class="card-text"><i class="bi bi-telephone-fill"></i> Phone: @item.Phone</p>
+                </div>
+                <div class="card-footer d-flex justify-content-around">
+                    <a asp-action="EmployeeSave" asp-controller="Employee" asp-route-Id="@item.Id" class="btn btn-info btn-sm text-white">
+                        <i class="bi bi-pencil-square"></i> Edit
+                    </a>
+                    <a asp-action="EmployeeDelete" asp-controller="Employee" asp-route-Id="@item.Id" class="btn btn-danger btn-sm">
+                        <i class="bi bi-trash"></i> Delete
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

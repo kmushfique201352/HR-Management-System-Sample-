@@ -1,0 +1,11 @@
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.Model\bin\Debug\net8.0\Assignement.Model.deps.json
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.Model\bin\Debug\net8.0\Assignement.Model.dll
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.Model\bin\Debug\net8.0\Assignement.Model.pdb
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.Model\obj\Debug\net8.0\Assignement.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.Model\obj\Debug\net8.0\Assignement.Model.AssemblyInfoInputs.cache
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.Model\obj\Debug\net8.0\Assignement.Model.AssemblyInfo.cs
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.Model\obj\Debug\net8.0\Assignement.Model.csproj.CoreCompileInputs.cache
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.Model\obj\Debug\net8.0\Assignement.Model.dll
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.Model\obj\Debug\net8.0\refint\Assignement.Model.dll
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.Model\obj\Debug\net8.0\Assignement.Model.pdb
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.Model\obj\Debug\net8.0\ref\Assignement.Model.dll

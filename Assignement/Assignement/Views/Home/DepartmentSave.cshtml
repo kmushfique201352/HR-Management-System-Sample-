@@ -1,0 +1,84 @@
+﻿@using Assignement.Model.Entity
+
+@model Department;
+
+@{
+    ViewData["Title"] = "Create Department";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+            <div class="card shadow border-0">
+                <div class="card-header bg-info text-white text-center">
+                    <h3>@ViewData["Title"]</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="DepartmentSave" method="post">
+                        <div class="form-group mb-3">
+                            <label asp-for="Name" class="form-label fw-bold">Department Name</label>
+                            <input asp-for="Name" type="text" class="form-control" placeholder="Enter department name" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-check form-switch mt-3">
+                            <input asp-for="IsDeleted" type="checkbox" class="form-check-input" role="switch" />
+                            <label asp-for="IsDeleted" class="form-check-label">Mark as Deleted</label>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label asp-for="UpBy" class="form-label fw-bold">Uploader's Name</label>
+                            <input asp-for="UpBy" type="text" class="form-control" placeholder="Enter Name" />
+                            <span asp-validation-for="UpBy" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label asp-for="CreatedAt" class="form-label fw-bold">Create Date</label>
+                            <input asp-for="CreatedAt" type="datetime-local" class="form-control"
+                                   value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" />
+                            <span asp-validation-for="CreatedAt" class="text-danger"></span>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-success px-4 py-2 shadow">
+                                <i class="bi bi-save me-2"></i> Save Department
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Style {
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .card-header {
+            font-size: 1.4rem;
+            font-weight: bold;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-label {
+            font-weight: 500;
+            color: #555;
+        }
+
+        .btn-success {
+            font-size: 1.1rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 128, 0, 0.2);
+        }
+
+        .form-control {
+            border-radius: 5px;
+            box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-check-input:checked {
+            background-color: #198754;
+            border-color: #198754;
+        }
+    </style>
+}

@@ -1,0 +1,17 @@
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\obj\Debug\net8.0\Assignement.DataAccess.csproj.AssemblyReference.cache
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\obj\Debug\net8.0\Assignement.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\obj\Debug\net8.0\Assignement.DataAccess.AssemblyInfoInputs.cache
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\obj\Debug\net8.0\Assignement.DataAccess.AssemblyInfo.cs
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\obj\Debug\net8.0\Assignement.DataAccess.csproj.CoreCompileInputs.cache
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\bin\Debug\net8.0\Assignement.DataAccess.deps.json
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\bin\Debug\net8.0\Assignement.DataAccess.runtimeconfig.json
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\bin\Debug\net8.0\Assignement.DataAccess.dll
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\bin\Debug\net8.0\Assignement.DataAccess.pdb
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\bin\Debug\net8.0\Assignement.Model.dll
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\bin\Debug\net8.0\Assignement.Model.pdb
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\obj\Debug\net8.0\Assignem.47532E3F.Up2Date
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\obj\Debug\net8.0\Assignement.DataAccess.dll
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\obj\Debug\net8.0\refint\Assignement.DataAccess.dll
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\obj\Debug\net8.0\Assignement.DataAccess.pdb
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\obj\Debug\net8.0\Assignement.DataAccess.genruntimeconfig.cache
+D:\GTR_WORK\DotnetTraining\Assignement\Assignement.DataAccess\obj\Debug\net8.0\ref\Assignement.DataAccess.dll
